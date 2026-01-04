@@ -54,10 +54,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
           </a>
 
           <a
-            href="#contact"
+            routerLink="/"
+            (click)="scrollToTop()"
             class="relative text-slate-600 hover:text-slate-900 transition-colors"
           >
-            Contact
+            ohter
             <span
               class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary-600 scale-x-0 origin-left transition-transform duration-300 ease-in-out"
             ></span>
