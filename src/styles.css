@@ -11,7 +11,20 @@
     @apply bg-white text-slate-900 font-sans;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold;
   }
+}
+
+.active-link {
+  @apply text-slate-900;
+}
+
+.active-link span {
+  @apply scale-x-100;
 }
