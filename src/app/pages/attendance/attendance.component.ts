@@ -535,4 +535,4 @@ import { Component } from '@angular/core';
   `,
   styles: [],
 })
-export class ServicesComponent {}
+export class Attendanceomponent {}

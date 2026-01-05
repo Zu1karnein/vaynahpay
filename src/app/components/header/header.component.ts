@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { CallbackModalComponent } from '../callback/callback-modal.component';
+import { ModalService } from '../../services/modal.service';
 
 @Component({
   selector: 'app-header',
@@ -79,9 +81,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
         <!-- CTA Button -->
         <button
+          (click)="openModal()"
           class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors"
         >
-          Get Started
+          Заказать звонок
         </button>
       </div>
     </header>
@@ -91,5 +94,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class HeaderComponent {
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  constructor(private modalService: ModalService) {}
+
+  openModal() {
+    this.modalService.openCallbackModal();
   }
 }
