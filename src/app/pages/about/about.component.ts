@@ -58,7 +58,7 @@ import { Component } from '@angular/core';
                 <div
                   class="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center"
                 >
-                  <img src="assets/logoVP2.png" alt="logo2" />
+                  <img src="assets/img/logoVP2.png" alt="logo2" />
                 </div>
                 <p class="text-slate-600 font-semibold">Lightning Fast</p>
               </div>
@@ -85,7 +85,7 @@ import { Component } from '@angular/core';
               class="w-80 h-80 rounded-full mx-auto mb-4 overflow-hidden border-4 border-slate-100"
             >
               <img
-                src="assets/SolsaevAS.png"
+                src="assets/img/SolsaevAS.png"
                 alt="solsaev"
                 class="w-full h-full object-cover object-center"
               />
@@ -132,7 +132,7 @@ import { Component } from '@angular/core';
               <div
                 class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center"
               >
-                <img src="assets/VTB.png" alt="VTB" />
+                <img src="assets/img/VTB.png" alt="VTB" />
               </div>
               <h3 class="font-semibold text-slate-900">ПАО ВТБ Банк</h3>
             </a>
@@ -149,7 +149,7 @@ import { Component } from '@angular/core';
               <div
                 class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center"
               >
-                <img src="assets/SBER.png" alt="SBER" />
+                <img src="assets/img/SBER.png" alt="SBER" />
               </div>
               <h3 class="font-semibold text-slate-900">ПАО "СБЕРБАНК"</h3>
             </a>
@@ -166,7 +166,7 @@ import { Component } from '@angular/core';
               <div
                 class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center"
               >
-                <img src="assets/vaynahtelecom.png" alt="vaynahtelekom" />
+                <img src="assets/img/vaynahtelecom.png" alt="vaynahtelekom" />
               </div>
               <h3 class="font-semibold text-slate-900">ЗАО «Вайнах Телеком»</h3>
             </a>
@@ -191,7 +191,7 @@ import { Component } from '@angular/core';
               <div
                 class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center"
               >
-                <img src="assets/telepay.png" alt="telepay" />
+                <img src="assets/img/telepay.png" alt="telepay" />
               </div>
               <h3 class="font-semibold text-slate-900">ООО «УЦИПС»</h3>
             </a>
@@ -208,7 +208,7 @@ import { Component } from '@angular/core';
               <div
                 class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center"
               >
-                <img src="assets/rapida.png" alt="rapida" />
+                <img src="assets/img/rapida.png" alt="rapida" />
               </div>
               <h3 class="font-semibold text-slate-900">ООО НКО «Рапида»</h3>
             </a>
@@ -225,7 +225,7 @@ import { Component } from '@angular/core';
               <div
                 class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center"
               >
-                <img src="assets/anelik.png" alt="anelik" />
+                <img src="assets/img/anelik.png" alt="anelik" />
               </div>
               <h3 class="font-semibold text-slate-900">ООО КБ «Анелик»</h3>
             </a>
@@ -244,7 +244,7 @@ import { Component } from '@angular/core';
             <div
               class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center"
             >
-              <img src="assets/beeonline.png" alt="beeonline" />
+              <img src="assets/img/beeonline.png" alt="beeonline" />
             </div>
             <h3 class="font-semibold text-slate-900">ПАО "Вымпелком"</h3>
           </a>
@@ -260,7 +260,7 @@ import { Component } from '@angular/core';
             <div
               class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center"
             >
-              <img src="assets/megafon.png" alt="megafon" />
+              <img src="assets/img/megafon.png" alt="megafon" />
             </div>
             <h3 class="font-semibold text-slate-900">ПАО "Мегафон"</h3>
           </a>
@@ -276,7 +276,7 @@ import { Component } from '@angular/core';
             <div
               class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center"
             >
-              <img src="assets/webmaster95.png" alt="webmaster95" />
+              <img src="assets/img/webmaster95.png" alt="webmaster95" />
             </div>
             <h3 class="font-semibold text-slate-900">ООО "ВЕБМАСТЕР95"</h3>
           </a>

@@ -1,26 +1,327 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-not-found',
+  selector: 'app-home',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   template: `
+    <!-- Providers and Users -->
     <section
-      class="flex flex-col items-center justify-center h-screen bg-white text-slate-900 px-6"
+      class="pt-32 pb-20 px-6 bg-gradient-to-br from-slate-100 via-white to-primary-200"
     >
-      <h1 class="text-6xl font-bold mb-4">404</h1>
-      <h2 class="text-3xl mb-6">Такой страницы нет :(</h2>
-      <p class="text-lg text-slate-600 mb-6">
-        Неправильно набран адрес или такой страницы не существует
-      </p>
-      <button
-        routerLink="/"
-        class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
-      >
-        На главную
-      </button>
+      <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+            Список сервисов
+          </h2>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Сотовая связь -->
+          <div
+            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">
+              Сотовая связь
+            </h3>
+            <ul class="space-y-2 text-slate-600">
+              <li>МТС</li>
+              <li>Билайн</li>
+              <li>Мегафон</li>
+              <li>Теле2</li>
+            </ul>
+          </div>
+
+          <!-- Интернет и IP телефония -->
+          <div
+            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">
+              Интернет и IP телефония
+            </h3>
+            <ul class="space-y-2 text-slate-600">
+              <li>ВайнахТелеком</li>
+              <li>KabINET</li>
+              <li>Планета (Комтехцентр)</li>
+            </ul>
+          </div>
+
+          <!-- Коммунальные платежи -->
+          <div
+            class="p-6 border  bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">
+              Коммунальные платежи
+            </h3>
+            <ul class="space-y-2 text-slate-600">
+              <li>АО «Чеченэнерго»</li>
+              <li>ЗАО «Чеченрегионгаз»</li>
+            </ul>
+          </div>
+
+          <!-- Домашняя связь -->
+          <div
+            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">
+              Домашняя связь
+            </h3>
+            <ul class="space-y-2 text-slate-600">
+              <li>Электросвязь</li>
+              <li>ВайнахТелеком</li>
+            </ul>
+          </div>
+
+          <!-- Коммерческое телевидение -->
+          <div
+            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">
+              Коммерческое телевидение
+            </h3>
+            <ul class="space-y-2 text-slate-600">
+              <li>НТВ+</li>
+              <li>Триколор ТВ</li>
+              <li>Континент ТВ</li>
+              <li>Телекарта</li>
+            </ul>
+          </div>
+
+          <!-- ГИБДД и госпошлины -->
+          <div
+            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">
+              ГИБДД и госпошлины
+            </h3>
+            <ul class="space-y-2 text-slate-600">
+              <li>Федеральная Налоговая Служба</li>
+              <li>Штрафы ГИБДД</li>
+              <li>ФГБУ ФКП Росреестр</li>
+            </ul>
+          </div>
+
+          <!-- Кредиты -->
+          <div
+            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">
+              Кредиты и пополнение
+            </h3>
+            <ul class="space-y-2 text-slate-600">
+              <li>Пополнение карт банков РФ</li>
+              <li>Кошелек TelePay Онлайн</li>
+              <li>WebMoney</li>
+              <li>Яндекс</li>
+            </ul>
+          </div>
+
+          <!-- Прочие -->
+          <div
+            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold text-slate-900 mb-4">
+              Прочие услуги
+            </h3>
+            <ul class="space-y-2 text-slate-600">
+              <li>Орифлэйм — оплата заказов</li>
+              <li>Avon</li>
+              <li>Платежи по свободным реквизитам</li>
+              <li>Платежи по свободным реквизитам (в бюджет)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- Docs Section -->
+    <section class="py-20 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+            Документы
+          </h2>
+        </div>
+
+        <!-- Docs Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Doc 1 -->
+          <a
+            href="assets/pdf/contract-docs.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Документы для заключения договора
+              </div>
+              <div class="text-sm text-slate-500">Размер: 927 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 2 -->
+          <a
+            href="assets/pdf/ComOffers.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Коммерческое предложение для Провайдеров
+              </div>
+              <div class="text-sm text-slate-500">Размер: 1020 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 3 -->
+          <a
+            href="assets/pdf/Rights.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Права и обязанности Провайдера
+              </div>
+              <div class="text-sm text-slate-500">Размер: 227 Кб</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 px-6 bg-gradient-to-r bg-primary-0">
+      <div class="text-center">
+        <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+          Vainah Pay — Карта терминалов
+        </h2>
+        <div class="max-w-5xl mx-auto">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A31b036302ec586e78b9587490d223a9dd33984a6a441003036d443a4e361c62a&source=constructor"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            class="w-full h-full min-h-[500px]"
+            title="Карта расположения VainahPay"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connecting of Provider Section -->
+    <div class="py-20 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+            Порядок подключения провайдера
+          </h2>
+          <section class="max-w-4xl mx-auto text-slate-700 leading-relaxed">
+            <p class="indent-8 mt-6">
+              Система платёжного сервиса «UniPay» приглашает к сотрудничеству
+              ТСЖ, Управляющие Компании, Операторов связи, Интернет-порталы и
+              магазины, заинтересованные в приёме наличных платежей от своих
+              клиентов.
+            </p>
+
+            <p class="indent-8 mt-6">
+              Став нашим партнёром, Вы обеспечите своих клиентов удобным и
+              доступным платежным сервисом, значительно сократите размер
+              дебиторской задолженности (т.к. пользователи услуг будут иметь
+              возможность производить оплату товаров/услуг Вашей компании в
+              любое удобное время, в наиболее подходящем месте), оптимизируете
+              Ваши издержки и увеличите прибыль.
+            </p>
+
+            <p class="indent-8 mt-6">
+              Поддержка инновационной системы отчетности позволяет настроить
+              выгрузку информации в любом удобном для Вас формате и виде. Хотите
+              подключить собственный биллинг к нам? Не проблема. От Вас
+              потребуется минимум для адаптации Вашего Программного Обеспечения
+              для работы с нами. Модульные шлюзы Системы адаптированы более чем
+              с 300 провайдерами по разным видам протоколов обмена и современным
+              системам шифрования данных.
+            </p>
+
+            <p class="indent-8 mt-6">
+              Максимальная автоматизация системы позволяет добавлять нового
+              поставщика менее чем за 2–3 дня с момента подписания договора.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Connecting of Agent Section -->
+    <div class="py-20 px-6 bg-gradient-to-r bg-primary-0">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+            Порядок подключения Агента
+          </h2>
+          <section class="max-w-4xl mx-auto text-slate-700 leading-relaxed">
+            <p class="indent-8 mt-6">
+              Система платежного сервиса «Vainah Pay» предлагает Вам
+              организовать данный бизнес с использованием платёжных терминалов
+              «Vainah Pay». Ваш доход будет состоять из вознаграждения, которое
+              выплачивает Система «Vainah Pay» владельцам платежных терминалов,
+              и дополнительной комиссии, взимаемой с клиента. Программное
+              обеспечение Системы платежного сервиса «Vainah Pay» позволяет
+              принимать платежи в пользу более чем 3500 поставщиков услуг,
+              включая сотовую и IP связь, кабельное телевидение и Интернет,
+              электронные деньги, погашение кредитов, услуги туроператоров,
+              штрафы, госпошлины, платежи в муниципальный бюджет, широкий спектр
+              интернет-магазинов, а также коммунальные услуги и мн. др.
+            </p>
+
+            <p class="indent-8 mt-6">
+              Скорость обслуживания одного клиента с использованием программного
+              обеспечения Системы «Vainah Pay» составляет от 2 до 40 секунд. При
+              помощи программного обеспечения Системы «Vainah Pay» Вы получаете
+              полный контроль над Вашими финансовыми потоками и возможность в
+              режиме реального времени управлять своим бизнесом.
+            </p>
+
+            <p class="indent-8 mt-6">
+              Поддержка инновационной системы отчетности позволяет настроить
+              выгрузку информации в любом удобном для Вас формате и виде. Хотите
+              подключить собственный биллинг к нам? Не проблема. От Вас
+              потребуется минимум для адаптации Вашего Программного Обеспечения
+              для работы с нами. Модульные шлюзы Системы адаптированы более чем
+              с 300 провайдерами по разным видам протоколов обмена и современным
+              системам шифрования данных.
+            </p>
+
+            <p class="indent-8 mt-6">
+              Чтобы стать агентом Системы платежного сервиса «Vainah Pay» Вам
+              необходимо:
+            </p>
+            <ul>
+              <li>Ознакомиться с Правилами Системы «Vainah Pay».</li>
+              <li>
+                Оставить заявку на подключение и подготовить пакет документов,
+                необходимых для заключения договора.
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
   `,
+  styles: [],
 })
 export class ServicesComponent {}

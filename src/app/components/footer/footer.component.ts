@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
             <div class="flex items-center gap-2 mb-4">
               <img
                 class="w-[10rem] h-auto"
-                src="assets/logoVP1.png"
+                src="assets/img/logoVP1.png"
                 alt="VainahPayLogo"
               />
             </div>
@@ -34,13 +34,16 @@ import { Component } from '@angular/core';
                 >
               </li>
               <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Услуги</a
+                <a
+                  href="/contacts"
+                  (click)="scrollToTop()"
+                  class="hover:text-white transition-colors"
+                  >Контакты</a
                 >
               </li>
               <li>
                 <a href="#" class="hover:text-white transition-colors"
-                  >Контакты</a
+                  >Услуги</a
                 >
               </li>
             </ul>

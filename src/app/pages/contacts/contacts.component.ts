@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   template: `
     <!-- Contacts Section -->
     <section
-      class="pt-24 pb-16 px-6 bg-gradient-to-br from-primary-0 via-white to-primary-100"
+      class="pt-32 pb-20 px-6 bg-gradient-to-br from-slate-50 via-white to-primary-100"
     >
       <div class="max-w-7xl mx-auto">
         <!-- Header -->

@@ -52,7 +52,7 @@ import { CommonModule } from '@angular/common';
                   <div
                     class="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center"
                   >
-                    <img src="assets/logoVP2.png" alt="logo2" />
+                    <img src="assets/img/logoVP2.png" alt="logo2" />
                   </div>
                   <p class="text-slate-600 font-semibold">Быстро и Безопасно</p>
                   <p class="text-slate-500 text-sm mt-1">Мгновенные расчеты</p>

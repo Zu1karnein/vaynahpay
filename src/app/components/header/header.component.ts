@@ -20,7 +20,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         >
           <img
             class="w-[12rem] h-auto"
-            src="assets/logoVP1.png"
+            src="assets/img/logoVP1.png"
             alt="VainahPayLogo"
           />
         </a>
