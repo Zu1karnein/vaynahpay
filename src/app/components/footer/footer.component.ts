@@ -19,65 +19,28 @@ import { Component } from '@angular/core';
               />
             </div>
             <p class="text-slate-400 text-sm">
-              Modern payment solutions for everyone.
+              номер лицензии: 000-000-000 регистрационный номер: 000-000-000
             </p>
           </div>
 
-          <!-- Quick Links -->
           <div>
-            <h3 class="font-semibold mb-4 text-white">Product</h3>
             <ul class="space-y-2 text-slate-400 text-sm">
               <li>
                 <a href="#" class="hover:text-white transition-colors"
-                  >Features</a
+                  >Компания</a
                 >
               </li>
               <li>
                 <a href="#" class="hover:text-white transition-colors"
-                  >Pricing</a
+                  >Услуги</a
                 >
               </li>
               <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Security</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Company -->
-          <div>
-            <h3 class="font-semibold mb-4 text-white">Company</h3>
-            <ul class="space-y-2 text-slate-400 text-sm">
-              <li>
-                <a href="#" class="hover:text-white transition-colors">About</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors">Blog</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Legal -->
-          <div>
-            <h3 class="font-semibold mb-4 text-white">Legal</h3>
-            <ul class="space-y-2 text-slate-400 text-sm">
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Privacy</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors">Terms</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Cookie Policy</a
+                <a
+                  routerLink="/about"
+                  (click)="scrollToTop()"
+                  class="hover:text-white transition-colors"
+                  >Контакты</a
                 >
               </li>
             </ul>
@@ -90,7 +53,7 @@ import { Component } from '@angular/core';
           <div
             class="flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm"
           >
-            <p>&copy; 2024 VainahPay. All rights reserved.</p>
+            <p>&copy; 2© 2026 Vainah Pay АО "Вайнах Пэй" Все права защищены.</p>
             <div class="flex gap-6 mt-4 md:mt-0">
               <a href="#" class="hover:text-white transition-colors">Twitter</a>
               <a href="#" class="hover:text-white transition-colors"
@@ -105,4 +68,8 @@ import { Component } from '@angular/core';
   `,
   styles: [],
 })
-export class FooterComponent {}
+export class FooterComponent {
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}

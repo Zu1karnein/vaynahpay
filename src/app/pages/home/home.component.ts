@@ -211,16 +211,17 @@ import { CommonModule } from '@angular/common';
     <section id="contact" class="py-20 px-6 bg-gradient-to-r bg-primary-0">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl lg:text-5xl font-bold text-slate-900">
-          Ready to Get Started?
+          Отправить заявку на подключение
         </h2>
         <p class="p-3 text-xl text-slate-600">
-          Join thousands of users who are simplifying their payments with
-          VainahPay.
+          Менеджеры компании с радостью ответят на ваши вопросы и произведут
+          расчет стоимости услуг и подготовят индивидуальное коммерческое
+          предложение.
         </p>
         <button
           class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
         >
-          Create Account Now
+          Задать вопрос
         </button>
       </div>
     </section>
