@@ -26,7 +26,10 @@ import { Component } from '@angular/core';
           <div>
             <ul class="space-y-2 text-slate-400 text-sm">
               <li>
-                <a href="#" class="hover:text-white transition-colors"
+                <a
+                  href="/about"
+                  (click)="scrollToTop()"
+                  class="hover:text-white transition-colors"
                   >Компания</a
                 >
               </li>
@@ -36,10 +39,7 @@ import { Component } from '@angular/core';
                 >
               </li>
               <li>
-                <a
-                  routerLink="/about"
-                  (click)="scrollToTop()"
-                  class="hover:text-white transition-colors"
+                <a href="#" class="hover:text-white transition-colors"
                   >Контакты</a
                 >
               </li>

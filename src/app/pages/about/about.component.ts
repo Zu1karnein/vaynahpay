@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
             <h1
               class="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight"
             >
-              About VainahPay
+              VainahPay
             </h1>
 
             <p class="text-lg text-slate-600 leading-relaxed">
