@@ -199,7 +199,7 @@ import { Component } from '@angular/core';
     </div>
 
     <!-- Connecting of Agent Section -->
-    <div class="py-20 px-6 ">
+    <div id="agent" class="py-20 px-6 ">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">

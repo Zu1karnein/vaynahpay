@@ -64,7 +64,7 @@ import { CommonModule } from '@angular/common';
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-20 px-6">
+    <section class="py-20 px-6">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
@@ -79,36 +79,7 @@ import { CommonModule } from '@angular/common';
 
         <!-- Features Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Feature 1 -->
-          <div
-            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white"
-          >
-            <div
-              class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors"
-            >
-              <svg
-                class="w-6 h-6 text-primary-600"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 7h16v10H4V7zM4 7l2-3h12l2 3M8 12h8M8 16h8M10 7v-2M14 7v-2"
-                />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-slate-900 mb-2">
-              Агентам (владельцам терминалов)
-            </h3>
-            <p class="text-slate-600">
-              Порядок подключения, Список сервисов,, Документы, ПО Vainah Pay
-            </p>
-          </div>
-
-          <!-- Feature 2 -->
+          <!-- Choose 1 -->
           <button
             type="button"
             [routerLink]="['/services']"
@@ -169,7 +140,39 @@ import { CommonModule } from '@angular/common';
             </p>
           </button>
 
-          <!-- Feature 3 -->
+          <!-- Choose 2 -->
+          <button
+            type="button"
+            [routerLink]="['/services']"
+            fragment="agent"
+            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white"
+          >
+            <div
+              class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors"
+            >
+              <svg
+                class="w-6 h-6 text-primary-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 7h16v10H4V7zM4 7l2-3h12l2 3M8 12h8M8 16h8M10 7v-2M14 7v-2"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-slate-900 mb-2">
+              Агентам (владельцам терминалов)
+            </h3>
+            <p class="text-slate-600">
+              Порядок подключения, Список сервисов,, Документы, ПО Vainah Pay
+            </p>
+          </button>
+
+          <!-- Choose 3 -->
           <div
             class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white"
           >
@@ -202,7 +205,7 @@ import { CommonModule } from '@angular/common';
               Пользователям (физическим лицам)
             </h3>
             <p class="text-slate-600">
-              Поиск платежаЮ Карта терминалов, Список сервисов
+              Поиск платежа, Карта терминалов, Список сервисов
             </p>
           </div>
         </div>
@@ -210,7 +213,7 @@ import { CommonModule } from '@angular/common';
     </section>
 
     <!-- CTA Section -->
-    <section id="contact" class="py-20 px-6 bg-gradient-to-r bg-primary-0">
+    <section class="py-20 px-6 bg-gradient-to-r bg-primary-0">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl lg:text-5xl font-bold text-slate-900">
           Отправить заявку на подключение
