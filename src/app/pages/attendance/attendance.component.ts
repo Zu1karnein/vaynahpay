@@ -253,10 +253,10 @@ import { Component } from '@angular/core';
               <a
                 href="assets/pdf/RealRules.pdf"
                 target="_blank"
-                class="flex items-center justify-center gap-4 p-4 border border-slate-300 rounded-lg hover:bg-slate-50 transition"
+                class="flex items-center justify-center gap-3 p-3 border border-slate-300 rounded-lg hover:bg-slate-50 transition"
               >
                 <!-- PDF Icon -->
-                <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+                <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
                 <!-- Text -->
                 <div>
@@ -288,10 +288,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/DocsForAgreement.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -306,10 +306,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/ComOffers.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -324,10 +324,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/Rights.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -356,10 +356,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/DocDealer1.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -377,10 +377,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/DocDealer2.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -397,10 +397,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/DocDealer3.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -418,10 +418,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/DocDealer4.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -452,10 +452,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/agreement.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -470,10 +470,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/doc/agentRequest.doc"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- DOC Icon -->
-            <img src="assets/img/imgDOC.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgDOC.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -488,10 +488,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/UNIPAY.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -506,10 +506,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/member.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -524,10 +524,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/rightsAgent.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -542,10 +542,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/payments.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -561,10 +561,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/reportAgent.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -580,10 +580,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/errPay.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -600,10 +600,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/comCredit.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -618,10 +618,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/constComCredit.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -636,10 +636,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/shrotComCredit.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -654,10 +654,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/infoTech.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -674,10 +674,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/operatorProvider.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -693,10 +693,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/pubInfoTech.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -712,10 +712,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/payConf.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -731,10 +731,10 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/privacy.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+            class="flex items-center gap-3 p-3 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-8 h-8" />
 
             <!-- Text -->
             <div>
@@ -747,6 +747,97 @@ import { Component } from '@angular/core';
         </div>
       </div>
     </section>
+
+    <!-- Software -->
+    <div id="agent" class="py-20 px-6 ">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+            Программное обеспечение
+          </h2>
+          <h2 class="text-4xl lg:text-2xl font-bold text-slate-900 mb-4 pt-4">
+            Программа для платёжных терминалов (Linux, Windows)
+          </h2>
+          <section class="max-w-4xl mx-auto text-slate-700 leading-relaxed">
+            <ul class="list-disc pl-5 text-left">
+              <li>
+                Кроссплатформенное решение. Возможность установки как под ОС
+                Windows, так и под ОС Linux
+              </li>
+              <li>
+                Простая процедура установки ПО. Наличие программы установки для
+                ОС Windows и rpm-пакета для ОС Linux
+              </li>
+              <li>
+                Простая процедура настройки ПО. Программа позволяет осуществить
+                автоматический поиск оборудовния.
+              </li>
+              <li>
+                Гибкая система оповещений о неисправности оборудования и прочих
+                происходящих событиях на терминале (SMS,ICQ,E-mail,Jabber)
+              </li>
+              <li>Автоматическая система обновления программного комплекса.</li>
+              <li>Поддержка настройки «горячих клавиш» главного меню.</li>
+              <li>
+                Широкий спектр сценариев оплаты. Online/Offline проверка данных,
+                проведение платежей.
+              </li>
+              <li>Гибкая система управления комиссиями.</li>
+              <li>
+                Удаленное управление терминалом. Отправка команд через личный
+                кабинет или с мобильного телефона.
+              </li>
+            </ul>
+          </section>
+
+          <h2 class="text-4xl lg:text-2xl font-bold text-slate-900 mb-4 pt-4">
+            Рабочее Место Агента (РМА)
+          </h2>
+          <section class="max-w-4xl mx-auto text-slate-700 leading-relaxed">
+            <ul class="list-disc pl-5 text-left">
+              <li>
+                Кроссплатформенное решение. Возможность установки как под ОС
+                Windows, так и под ОС Linux
+              </li>
+              <li>
+                Поддержка импорта/экспорта платежей. Проведение «пачек»
+                платежей.
+              </li>
+              <li>Автоматическая система обновления программного комплекса.</li>
+              <li>Возможность печати предварительного чека.</li>
+              <li>Просмотр истории платежей.</li>
+              <li>Поддержка Online проверок лицевых счетов.</li>
+              <li>
+                Вспомогательные инструменты для кассира: проверка неотправленных
+                платежей при выходе, дублирующих платежей, предупреждение о
+                большой сумме платежа и прочие.
+              </li>
+              <li>
+                Поддержка настройки «горячих клавиш» главного меню, а также
+                горячих клавиш для перехода к созданию платежа на заданный
+                сервис.
+              </li>
+            </ul>
+          </section>
+
+          <h2 class="text-4xl lg:text-2xl font-bold text-slate-900 mb-4 pt-4">
+            Программа для оплаты услуг с мобильного телефона
+          </h2>
+          <p>
+            Программное обеспечение предоставляет набор необходимых функций для
+            осуществления платежей с мобильного телефона.
+          </p>
+
+          <h2 class="text-4xl lg:text-2xl font-bold text-slate-900 mb-4 pt-4">
+            Программа для мониторинга терминалов с мобильного телефона
+          </h2>
+          <p>
+            Программное обеспечение позволяет отслеживать состояние терминалов,
+            отправлять команды.
+          </p>
+        </div>
+      </div>
+    </div>
   `,
   styles: [],
 })
