@@ -1,6 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { CallbackModalComponent } from '../callback/callback-modal.component';
 import { ModalService } from '../../services/modal.service';
 
 @Component({
@@ -15,99 +14,158 @@ import { ModalService } from '../../services/modal.service';
         class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
       >
         <!-- Logo -->
-        <a
-          routerLink="/"
-          (click)="scrollToTop()"
-          class="flex items-center gap-2"
-        >
+        <a routerLink="/" (click)="navigate()" class="flex items-center gap-2">
           <img
-            class="w-[12rem] h-auto"
+            class="w-[10rem] md:w-[12rem] h-auto"
             src="assets/img/logoVP1.png"
             alt="VainahPayLogo"
           />
         </a>
 
-        <!-- Navigation -->
+        <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8">
           <a
             routerLink="/"
-            (click)="scrollToTop()"
+            (click)="navigate()"
             routerLinkActive="active-link"
             [routerLinkActiveOptions]="{ exact: true }"
-            class="relative text-slate-600 hover:text-slate-900 transition-colors"
+            class="nav-link"
           >
-            Главная
-            <span
-              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary-600 scale-x-0 origin-left transition-transform duration-300 ease-in-out"
-            ></span>
+            Главная <span class="nav-underline"></span>
           </a>
 
           <a
             routerLink="/about"
-            (click)="scrollToTop()"
+            (click)="navigate()"
             routerLinkActive="active-link"
-            class="relative text-slate-600 hover:text-slate-900 transition-colors"
+            class="nav-link"
           >
-            О Компании
-            <span
-              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary-600 scale-x-0 origin-left transition-transform duration-300 ease-in-out"
-            ></span>
+            О Компании <span class="nav-underline"></span>
           </a>
 
           <a
             routerLink="/contacts"
-            (click)="scrollToTop()"
+            (click)="navigate()"
             routerLinkActive="active-link"
-            class="relative text-slate-600 hover:text-slate-900 transition-colors"
+            class="nav-link"
           >
-            Контакты
-            <span
-              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary-600 scale-x-0 origin-left transition-transform duration-300 ease-in-out"
-            ></span>
+            Контакты <span class="nav-underline"></span>
           </a>
 
           <a
             routerLink="/services"
-            (click)="scrollToTop()"
+            (click)="navigate()"
             routerLinkActive="active-link"
-            class="relative text-slate-600 hover:text-slate-900 transition-colors"
+            class="nav-link"
           >
-            Услуги
-            <span
-              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary-600 scale-x-0 origin-left transition-transform duration-300 ease-in-out"
-            ></span>
+            Услуги <span class="nav-underline"></span>
           </a>
 
           <a
             href="https://cp.vainahpay.ru/server/login.seam?cid=21125"
-            routerLinkActive="active-link"
-            class="relative text-slate-600 hover:text-slate-900 transition-colors"
+            class="nav-link"
           >
             Личный кабинет Агента
-            <span
-              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary-600 scale-x-0 origin-left transition-transform duration-300 ease-in-out"
-            ></span>
+            <span class="nav-underline"></span>
           </a>
         </nav>
 
-        <!-- CTA Button -->
+        <!-- Right side -->
+        <div class="flex items-center gap-4">
+          <!-- CTA -->
+          <button
+            (click)="openModal()"
+            class="hidden md:block bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors"
+          >
+            Заказать звонок
+          </button>
+
+          <!-- Burger -->
+          <button
+            class="md:hidden text-slate-700 text-2xl"
+            (click)="toggleMenu()"
+            aria-label="Открыть меню"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+
+      @if (menuOpen) {
+      <div
+        class="md:hidden bg-white border-t border-slate-200 px-6 py-6 space-y-5"
+      >
+        <a
+          routerLink="/"
+          (click)="navigate()"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="block nav-link"
+        >
+          Главная <span class="nav-underline"></span>
+        </a>
+
+        <a
+          routerLink="/about"
+          (click)="navigate()"
+          routerLinkActive="active-link"
+          class="block nav-link"
+        >
+          О Компании <span class="nav-underline"></span>
+        </a>
+
+        <a
+          routerLink="/contacts"
+          (click)="navigate()"
+          routerLinkActive="active-link"
+          class="block nav-link"
+        >
+          Контакты <span class="nav-underline"></span>
+        </a>
+
+        <a
+          routerLink="/services"
+          (click)="navigate()"
+          routerLinkActive="active-link"
+          class="block nav-link"
+        >
+          Услуги <span class="nav-underline"></span>
+        </a>
+
+        <a
+          href="https://cp.vainahpay.ru/server/login.seam?cid=21125"
+          class="block nav-link"
+        >
+          Личный кабинет Агента
+          <span class="nav-underline"></span>
+        </a>
+
         <button
-          (click)="openModal()"
-          class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg transition-colors"
+          (click)="openModal(); menuOpen = false"
+          class="w-full mt-4 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg transition-colors"
         >
           Заказать звонок
         </button>
       </div>
+      }
     </header>
   `,
-  styles: [],
 })
 export class HeaderComponent {
-  scrollToTop(): void {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  menuOpen = false;
 
   constructor(private modalService: ModalService) {}
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  navigate() {
+    this.menuOpen = false;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   openModal() {
     this.modalService.openCallbackModal();

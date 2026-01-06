@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------- Base ---------- */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -21,10 +22,27 @@
   }
 }
 
-.active-link {
-  @apply text-slate-900;
-}
+/* ---------- Header Navigation ---------- */
+@layer components {
+  .nav-link {
+    @apply relative inline-block text-slate-600 transition-colors duration-200;
+  }
 
-.active-link span {
-  @apply scale-x-100;
+  .nav-link:hover {
+    @apply text-slate-900;
+  }
+
+  .nav-underline {
+    @apply absolute left-0 -bottom-1 w-full h-[2px] bg-primary-600
+           scale-x-0 origin-left
+           transition-transform duration-300 ease-in-out;
+  }
+
+  .active-link {
+    @apply text-slate-900;
+  }
+
+  .active-link .nav-underline {
+    @apply scale-x-100;
+  }
 }
