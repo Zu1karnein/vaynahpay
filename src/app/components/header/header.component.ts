@@ -77,6 +77,17 @@ import { ModalService } from '../../services/modal.service';
               class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary-600 scale-x-0 origin-left transition-transform duration-300 ease-in-out"
             ></span>
           </a>
+
+          <a
+            href="https://cp.vainahpay.ru/server/login.seam?cid=21125"
+            routerLinkActive="active-link"
+            class="relative text-slate-600 hover:text-slate-900 transition-colors"
+          >
+            Личный кабинет Агента
+            <span
+              class="absolute left-0 -bottom-1 w-full h-[2px] bg-primary-600 scale-x-0 origin-left transition-transform duration-300 ease-in-out"
+            ></span>
+          </a>
         </nav>
 
         <!-- CTA Button -->
