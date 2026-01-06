@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   template: `
     <!-- Hero Section -->
     <section
@@ -26,12 +27,10 @@ import { CommonModule } from '@angular/common';
             </p>
             <div class="flex flex-col sm:flex-row gap-4 pt-4">
               <button
+                type="button"
+                routerLink="/about"
+                (click)="scrollToTop()"
                 class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                Заявка на подключение
-              </button>
-              <button
-                class="border-2 border-slate-300 hover:border-slate-400 text-slate-900 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Узнать больше
               </button>
@@ -110,8 +109,11 @@ import { CommonModule } from '@angular/common';
           </div>
 
           <!-- Feature 2 -->
-          <div
-            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white"
+          <button
+            type="button"
+            [routerLink]="['/services']"
+            fragment="provider"
+            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all "
           >
             <div
               class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors"
@@ -165,7 +167,7 @@ import { CommonModule } from '@angular/common';
             <p class="text-slate-600">
               Порядок подключения, Точки приема, Документы, Список сервисов
             </p>
-          </div>
+          </button>
 
           <!-- Feature 3 -->
           <div
@@ -228,4 +230,8 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [],
 })
-export class HomeComponent {}
+export class HomeComponent {
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}

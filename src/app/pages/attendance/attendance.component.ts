@@ -156,7 +156,7 @@ import { Component } from '@angular/core';
     </section>
 
     <!-- Connecting of Provider Section -->
-    <div class="py-20 px-6 bg-gradient-to-r bg-primary-0">
+    <div id="provider" class="py-20 px-6 bg-gradient-to-r bg-primary-0">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
