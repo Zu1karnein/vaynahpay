@@ -253,7 +253,7 @@ import { Component } from '@angular/core';
               <a
                 href="assets/pdf/RealRules.pdf"
                 target="_blank"
-                class="flex items-center justify-center gap-4 p-4 border border-slate-300 rounded-lg hover:bg-primary-100 transition"
+                class="flex items-center justify-center gap-4 p-4 border border-slate-300 rounded-lg hover:bg-slate-50 transition"
               >
                 <!-- PDF Icon -->
                 <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
@@ -288,7 +288,7 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/DocsForAgreement.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
             <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
@@ -306,7 +306,7 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/ComOffers.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
             <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
@@ -324,7 +324,7 @@ import { Component } from '@angular/core';
           <a
             href="assets/pdf/Rights.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
             <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
@@ -450,9 +450,9 @@ import { Component } from '@angular/core';
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Doc 1 -->
           <a
-            href="assets/pdf/DocDealer1.pdf"
+            href="assets/pdf/agreement.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
             <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
@@ -460,40 +460,35 @@ import { Component } from '@angular/core';
             <!-- Text -->
             <div>
               <div class="text-primary-600 font-semibold hover:underline">
-                Форма договора о приеме платежей с субагентом с участием
-                коммерческого представителя (Приложение №1.1 к Правилам системы.
-                Форма договора о приеме платежей с субагентом с участием
-                коммерческого представителя)
+                Согласие на обработку персональных данных
               </div>
-              <div class="text-sm text-slate-500">Размер: 660 Кб</div>
+              <div class="text-sm text-slate-500">Размер: 178 Кб</div>
             </div>
           </a>
 
           <!-- Doc 2 -->
           <a
-            href="assets/pdf/DocDealer2.pdf"
+            href="assets/doc/agentRequest.doc"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
-            <!-- PDF Icon -->
-            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+            <!-- DOC Icon -->
+            <img src="assets/img/imgDOC.png" alt="PDF" class="w-10 h-10" />
 
             <!-- Text -->
             <div>
               <div class="text-primary-600 font-semibold hover:underline">
-                Форма договора между Коммерческим представителем и Оператором
-                Системы.(Приложение №1.6 к Правилам системы. Форма договора
-                между Коммерческим представителем и Оператором Системы)
+                Заявление от Агента на отключение Единой Тех.поддержки
               </div>
-              <div class="text-sm text-slate-500">Размер: 556 Кб</div>
+              <div class="text-sm text-slate-500">Размер: 27 Кб</div>
             </div>
           </a>
 
           <!-- Doc 3 -->
           <a
-            href="assets/pdf/DocDealer3.pdf"
+            href="assets/pdf/UNIPAY.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
             <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
@@ -501,20 +496,17 @@ import { Component } from '@angular/core';
             <!-- Text -->
             <div>
               <div class="text-primary-600 font-semibold hover:underline">
-                Форма договора между Оператором по приему Платежей, Коммерческим
-                представителем и Ритейлером.(Приложение №1.3 к Правилам системы.
-                Форма договора между Оператором по приему Платежей, Коммерческим
-                представителем и Ритейлер)
+                Правила Системы UNIPAY
               </div>
-              <div class="text-sm text-slate-500">Размер: 714 Кб</div>
+              <div class="text-sm text-slate-500">Размер: 11 576 Кб</div>
             </div>
           </a>
 
           <!-- Doc 4 -->
           <a
-            href="assets/pdf/DocDealer4.pdf"
+            href="assets/pdf/member.pdf"
             target="_blank"
-            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-slate-50 transition"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
           >
             <!-- PDF Icon -->
             <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
@@ -522,11 +514,234 @@ import { Component } from '@angular/core';
             <!-- Text -->
             <div>
               <div class="text-primary-600 font-semibold hover:underline">
-                Форма договора между Оператором Системы, Поставщиком
-                (Организацией) и Коммерческим представителем.(Приложение №1.5 к
-                Правилам системы)
+                Анкета Участника Системы
               </div>
-              <div class="text-sm text-slate-500">Размер: 558 Кб</div>
+              <div class="text-sm text-slate-500">Размер: 1 422 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 5 -->
+          <a
+            href="assets/pdf/rightsAgent.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Права и обязанности Агента
+              </div>
+              <div class="text-sm text-slate-500">Размер: 3 013 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 6 -->
+          <a
+            href="assets/pdf/payments.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Форма договора о приеме платежей с субагентом.(Приложение №1 к
+                Правилам системы. Форма договора о приеме платежей с субагентом)
+              </div>
+              <div class="text-sm text-slate-500">Размер: 462 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 7 -->
+          <a
+            href="assets/pdf/reportAgent.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Форма отчета Агента (Приложение №2 к Правилам системы. Форма
+                отчета Агента)
+              </div>
+              <div class="text-sm text-slate-500">Размер: 352 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 8 -->
+          <a
+            href="assets/pdf/errPay.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Регламент взаимодействия Сторон в случае ошибочных
+                платежей.(Приложение №4 к Правилам системы. Регламент
+                взаимодействия Сторон в случае ошибочных платежей)
+              </div>
+              <div class="text-sm text-slate-500">Размер: 269 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 9 -->
+          <a
+            href="assets/pdf/comCredit.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Документы при заключении Договора на коммерческий кредит
+              </div>
+              <div class="text-sm text-slate-500">Размер: 599 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 10 -->
+          <a
+            href="assets/pdf/constComCredit.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Заявление на постоянный коммерческий кредит
+              </div>
+              <div class="text-sm text-slate-500">Размер: 328 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 11 -->
+          <a
+            href="assets/pdf/shrotComCredit.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Заявление на краткосрочный коммерческий кредит
+              </div>
+              <div class="text-sm text-slate-500">Размер: 326 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 12 -->
+          <a
+            href="assets/pdf/infoTech.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Форма договора об информационно-технологическом взаимодействии
+                между участниками расчетов, заключаемого Кредитной организацией
+                и Оператором Системы. (Приложение №1.2 к Правилам системы)
+              </div>
+              <div class="text-sm text-slate-500">Размер: 1 018 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 13 -->
+          <a
+            href="assets/pdf/operatorProvider.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Приложение № 1.4 Форма договора между Оператором Системы и
+                Поставщиком (Организацией)
+              </div>
+              <div class="text-sm text-slate-500">Размер: 1 386 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 14 -->
+          <a
+            href="assets/pdf/pubInfoTech.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Публичная оферта на заключение Договора об оказании
+                информационно-технологических_услуг (Приложение_№ 3)
+              </div>
+              <div class="text-sm text-slate-500">Размер: 977 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 15 -->
+          <a
+            href="assets/pdf/payConf.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Форма документа подтверждающего Платеж или совершение банковской
+                операции и принятие Заявки к исполнению.(Приложение_№ 5)
+              </div>
+              <div class="text-sm text-slate-500">Размер: 1 494 Кб</div>
+            </div>
+          </a>
+
+          <!-- Doc 16 -->
+          <a
+            href="assets/pdf/privacy.pdf"
+            target="_blank"
+            class="flex items-center gap-4 p-4 border border-slate-200 rounded-lg hover:bg-primary-100 transition"
+          >
+            <!-- PDF Icon -->
+            <img src="assets/img/imgPDF.png" alt="PDF" class="w-10 h-10" />
+
+            <!-- Text -->
+            <div>
+              <div class="text-primary-600 font-semibold hover:underline">
+                Политика конфиденциальности
+              </div>
+              <div class="text-sm text-slate-500">Размер: 473 Кб</div>
             </div>
           </a>
         </div>
