@@ -74,7 +74,7 @@ import { Component } from '@angular/core';
     </section>
 
     <!-- Requisites -->
-    <section id="requisites" class="py-20 px-6 bg-white">
+    <section id="requisites" class="py-20 px-6">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
@@ -84,54 +84,42 @@ import { Component } from '@angular/core';
             Официальная информация и юридические данные компании
           </p>
         </div>
-
         <div class="max-w-5xl mx-auto space-y-4">
           <!-- Полное наименование -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-slate-50 rounded-xl"
           >
             <div class="font-semibold text-slate-900">Полное наименование:</div>
             <div class="md:col-span-2 text-slate-700">
               Акционерное общество «Вайнах Пэй»
             </div>
           </div>
-
           <!-- Сокращенное наименование -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-white border border-slate-200 rounded-xl"
           >
             <div class="font-semibold text-slate-900">
               Сокращенное наименование:
             </div>
             <div class="md:col-span-2 text-slate-700">АО «Вайнах Пэй»</div>
           </div>
-
           <!-- ИНН/КПП -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-slate-50 rounded-xl"
           >
-            <div class="font-semibold text-slate-800">ИНН / КПП:</div>
-            <div class="md:col-span-2 text-slate-700">
-              2005004411 / 201301001
-            </div>
+            <div class="font-semibold text-slate-900">ИНН/КПП:</div>
+            <div class="md:col-span-2 text-slate-700">2005004411/201301001</div>
           </div>
-
           <!-- ОРГН -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-white border border-slate-200 rounded-xl"
           >
             <div class="font-semibold text-slate-900">ОРГН:</div>
             <div class="md:col-span-2 text-slate-700">1072032000534</div>
           </div>
-
           <!-- Юридический адрес -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-slate-50 rounded-xl"
           >
             <div class="font-semibold text-slate-900">Юридический адрес:</div>
             <div class="md:col-span-2 text-slate-700">
@@ -139,31 +127,25 @@ import { Component } from '@angular/core';
               181, кв. 20
             </div>
           </div>
-
           <!-- Фактический адрес -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-white border border-slate-200 rounded-xl"
           >
             <div class="font-semibold text-slate-900">Фактический адрес:</div>
             <div class="md:col-span-2 text-slate-700">
               364024, г. Грозный, ул им. С. Ш. Лорсанова, д. 9, 1-этаж
             </div>
           </div>
-
           <!-- Телефон, факс -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-slate-50 rounded-xl"
           >
             <div class="font-semibold text-slate-900">Телефон, факс:</div>
             <div class="md:col-span-2 text-slate-700">8(8712) 29-39-29</div>
           </div>
-
           <!-- Электронная почта -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-white border border-slate-200 rounded-xl"
           >
             <div class="font-semibold text-slate-900">Электронная почта:</div>
             <div class="md:col-span-2">
@@ -175,11 +157,9 @@ import { Component } from '@angular/core';
               </a>
             </div>
           </div>
-
           <!-- Сайт -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-slate-50 rounded-xl"
           >
             <div class="font-semibold text-slate-900">Сайт:</div>
             <div class="md:col-span-2">
@@ -193,11 +173,9 @@ import { Component } from '@angular/core';
               </a>
             </div>
           </div>
-
           <!-- Банковские реквизиты -->
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6
-         bg-emerald-100/40 border border-emerald-200 rounded-xl"
+            class="grid grid-cols-1 md:grid-cols-3 gap-4 p-6 bg-white border border-slate-200 rounded-xl"
           >
             <div class="font-semibold text-slate-900">
               Банковские реквизиты:
