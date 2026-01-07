@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   template: `
     <!-- Providers and Users -->
     <section
+      id="list"
       class="pt-32 pb-20 px-6 bg-gradient-to-br from-slate-100 via-white to-primary-200"
     >
       <div class="max-w-7xl mx-auto">

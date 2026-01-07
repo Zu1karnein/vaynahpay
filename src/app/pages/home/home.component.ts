@@ -173,7 +173,10 @@ import { CommonModule } from '@angular/common';
           </button>
 
           <!-- Choose 3 -->
-          <div
+          <button
+            type="button"
+            [routerLink]="['/services']"
+            fragment="list"
             class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white"
           >
             <div
@@ -207,7 +210,7 @@ import { CommonModule } from '@angular/common';
             <p class="text-slate-600">
               Поиск платежа, Карта терминалов, Список сервисов
             </p>
-          </div>
+          </button>
         </div>
       </div>
     </section>
