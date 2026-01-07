@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   template: `
     <!-- Hero Section -->
     <section
-      class="pt-32 pb-20 px-6 bg-gradient-to-br from-slate-50 via-white to-primary-100"
+      class="pt-32 pb-20 px-6 bg-gradient-to-br from-slate-50 via-white to-primary-100 md:min-h-screen md:flex md:items-center"
     >
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
