@@ -49,53 +49,25 @@ import { Component } from '@angular/core';
             </div>
           </div>
 
-          <!-- Visual Card -->
-          <div class="hidden lg:flex items-center justify-center">
+          <!-- Management -->
+          <div class="flex justify-center">
             <div
-              class="w-80 h-80 bg-primary-100 rounded-3xl flex items-center justify-center shadow-2xl"
+              class="max-w-sm p-6 border border-primary-200 rounded-xl text-center shadow-lg bg-primary-100"
             >
-              <div class="text-center">
-                <div
-                  class="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center"
-                >
-                  <img src="assets/img/logoVP2.png" alt="logo2" />
-                </div>
-                <p class="text-slate-600 font-semibold">Lightning Fast</p>
+              <div class="w-80 h-80 rounded-full mb-4 overflow-hidden ">
+                <img
+                  src="assets/img/SolsaevAS.png"
+                  alt="solsaev"
+                  class="w-full h-full object-cover object-center"
+                />
               </div>
+              <h3 class="text-lg font-semibold text-slate-900">
+                Солсанов Асламбек Султанович
+              </h3>
+              <p class="text-primary-600 font-semibold text-sm">
+                Президент АО "Вайнах Пэй"
+              </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Management -->
-    <section id="management" class="py-20 px-6 bg-white">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-            Руководство компании
-          </h2>
-        </div>
-
-        <div class="flex justify-center">
-          <div
-            class="w-full max-w-sm p-6 border border-slate-200 rounded-xl text-center hover:shadow-lg transition-all"
-          >
-            <div
-              class="w-80 h-80 rounded-full mx-auto mb-4 overflow-hidden border-4 border-slate-100"
-            >
-              <img
-                src="assets/img/SolsaevAS.png"
-                alt="solsaev"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h3 class="text-lg font-semibold text-slate-900">
-              Солсанов Асламбек Султанович
-            </h3>
-            <p class="text-primary-600 font-semibold text-sm">
-              Президент АО "Вайнах Пэй"
-            </p>
           </div>
         </div>
       </div>
