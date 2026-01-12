@@ -63,12 +63,12 @@ import { CommonModule } from '@angular/common';
       </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Why VaynahPay Section -->
     <section class="py-20 px-6">
       <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
           <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-            Почему стоит выбрать VainahPay?
+            Почему выбирают VainahPay?
           </h2>
           <p class="text-xl text-slate-600">
             Мы специализируемся на оказании широкого спектра услуг как для

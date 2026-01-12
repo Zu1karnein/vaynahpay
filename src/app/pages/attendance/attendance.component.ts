@@ -22,7 +22,7 @@ import { Component } from '@angular/core';
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Сотовая связь -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Сотовая связь
@@ -37,7 +37,7 @@ import { Component } from '@angular/core';
 
           <!-- Интернет и IP телефония -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Интернет и IP телефония
@@ -51,7 +51,7 @@ import { Component } from '@angular/core';
 
           <!-- Коммунальные платежи -->
           <div
-            class="p-6 border  bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+            class="p-6 border  bg-white border-slate-200 rounded-2xl transition"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Коммунальные платежи
@@ -64,7 +64,7 @@ import { Component } from '@angular/core';
 
           <!-- Домашняя связь -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Домашняя связь
@@ -77,7 +77,7 @@ import { Component } from '@angular/core';
 
           <!-- Коммерческое телевидение -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Коммерческое телевидение
@@ -92,7 +92,7 @@ import { Component } from '@angular/core';
 
           <!-- ГИБДД и госпошлины -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               ГИБДД и госпошлины
@@ -106,7 +106,7 @@ import { Component } from '@angular/core';
 
           <!-- Кредиты -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Кредиты и пополнение
@@ -121,7 +121,7 @@ import { Component } from '@angular/core';
 
           <!-- Прочие -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl hover:shadow-lg transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Прочие услуги

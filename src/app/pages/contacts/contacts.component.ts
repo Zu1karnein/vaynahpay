@@ -30,7 +30,7 @@ import { Component } from '@angular/core';
             <div class="space-y-4 flex-grow">
               <!-- Address -->
               <div
-                class="flex gap-4 items-start p-4 bg-white rounded-xl border border-slate-200 hover:shadow-lg transition-all"
+                class="flex gap-4 items-start p-4 bg-white rounded-xl border border-slate-200 transition-all"
               >
                 <div
                   class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0"
@@ -65,7 +65,7 @@ import { Component } from '@angular/core';
 
               <!-- Phone -->
               <div
-                class="flex gap-4 items-start p-4 bg-white rounded-xl border border-slate-200 hover:shadow-lg transition-all"
+                class="flex gap-4 items-start p-4 bg-white rounded-xl border border-slate-200 transition-all"
               >
                 <div
                   class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0"
@@ -97,7 +97,7 @@ import { Component } from '@angular/core';
 
               <!-- Email -->
               <div
-                class="flex gap-4 items-start p-4 bg-white rounded-xl border border-slate-200 hover:shadow-lg transition-all"
+                class="flex gap-4 items-start p-4 bg-white rounded-xl border border-slate-200 transition-all"
               >
                 <div
                   class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0"
@@ -129,7 +129,7 @@ import { Component } from '@angular/core';
 
               <!-- Working Hours -->
               <div
-                class="flex gap-4 items-start p-4 bg-white rounded-xl border border-slate-200 hover:shadow-lg transition-all"
+                class="flex gap-4 items-start p-4 bg-white rounded-xl border border-slate-200 transition-all"
               >
                 <div
                   class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0"
