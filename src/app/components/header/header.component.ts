@@ -12,7 +12,7 @@ import { ModalService } from '../../services/modal.service';
     >
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <!-- Logo -->
-        <a routerLink="/" (click)="navigate()" class="flex items-center gap-2">
+        <a routerLink="/" class="flex items-center gap-2">
           <img
             class="w-[10rem] md:w-[12rem] h-auto"
             src="assets/img/logoVP1.png"
@@ -24,7 +24,6 @@ import { ModalService } from '../../services/modal.service';
         <nav class="hidden md:flex items-center gap-8">
           <a
             routerLink="/"
-            (click)="navigate()"
             routerLinkActive="active-link"
             [routerLinkActiveOptions]="{ exact: true }"
             class="nav-link"
@@ -34,7 +33,6 @@ import { ModalService } from '../../services/modal.service';
 
           <a
             routerLink="/about"
-            (click)="navigate()"
             routerLinkActive="active-link"
             class="nav-link"
           >
@@ -43,7 +41,6 @@ import { ModalService } from '../../services/modal.service';
 
           <a
             routerLink="/contacts"
-            (click)="navigate()"
             routerLinkActive="active-link"
             class="nav-link"
           >
@@ -52,7 +49,6 @@ import { ModalService } from '../../services/modal.service';
 
           <a
             routerLink="/services"
-            (click)="navigate()"
             routerLinkActive="active-link"
             class="nav-link"
           >
@@ -97,7 +93,6 @@ import { ModalService } from '../../services/modal.service';
       >
         <a
           routerLink="/"
-          (click)="navigate()"
           routerLinkActive="active-link"
           [routerLinkActiveOptions]="{ exact: true }"
           class="block nav-link"
@@ -107,7 +102,6 @@ import { ModalService } from '../../services/modal.service';
 
         <a
           routerLink="/about"
-          (click)="navigate()"
           routerLinkActive="active-link"
           class="block nav-link"
         >
@@ -116,7 +110,6 @@ import { ModalService } from '../../services/modal.service';
 
         <a
           routerLink="/contacts"
-          (click)="navigate()"
           routerLinkActive="active-link"
           class="block nav-link"
         >
@@ -125,7 +118,6 @@ import { ModalService } from '../../services/modal.service';
 
         <a
           routerLink="/services"
-          (click)="navigate()"
           routerLinkActive="active-link"
           class="block nav-link"
         >
@@ -158,11 +150,6 @@ export class HeaderComponent {
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
-  }
-
-  navigate() {
-    this.menuOpen = false;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   openModal() {

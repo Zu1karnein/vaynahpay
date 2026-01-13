@@ -18,7 +18,8 @@ import { CommonModule } from '@angular/common';
             <h1
               class="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight opacity-0 animate-fade-in-down"
             >
-              Платежи стали <span class="text-primary-600">Simple</span>
+              Платежи стали
+              <span class="text-primary-600">проще</span>
             </h1>
 
             <p
@@ -35,7 +36,6 @@ import { CommonModule } from '@angular/common';
               <button
                 type="button"
                 routerLink="/about"
-                (click)="scrollToTop()"
                 class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Узнать больше
@@ -282,9 +282,5 @@ export class HomeComponent implements OnInit, OnDestroy, AfterViewInit {
     if (this.whyChooseObserver) {
       this.whyChooseObserver.disconnect();
     }
-  }
-
-  scrollToTop(): void {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

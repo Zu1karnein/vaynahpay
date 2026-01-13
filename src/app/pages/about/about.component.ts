@@ -48,8 +48,8 @@ import {
             >
               <div class="w-80 h-80 rounded-full mb-4 overflow-hidden">
                 <img
-                  src="assets/img/SolsaevAS.png"
-                  alt="solsaev"
+                  src="assets/img/SolsanovAS.png"
+                  alt="solsanov"
                   class="w-full h-full object-cover object-center"
                 />
               </div>
