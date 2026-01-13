@@ -16,16 +16,22 @@ import { CommonModule } from '@angular/common';
           <!-- Hero Content -->
           <div class="space-y-6">
             <h1
-              class="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight"
+              class="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight opacity-0 animate-fade-in-down"
             >
               Платежи стали <span class="text-primary-600">Simple</span>
             </h1>
-            <p class="text-xl text-slate-600 leading-relaxed">
+
+            <p
+              class="text-xl text-slate-600 leading-relaxed opacity-0 animate-fade-in-down-delay-1"
+            >
               VainahPay упрощает отправку, получение и управление платежами.
               Создана для современного мира, обладает передовыми технологиями
               безопасности и обеспечивает мгновенные транзакции.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+
+            <div
+              class="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 animate-fade-in-up-delay-2"
+            >
               <button
                 type="button"
                 routerLink="/about"

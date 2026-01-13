@@ -17,14 +17,17 @@ import {
     >
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Левая колонка с текстом -->
           <div class="space-y-6">
             <h1
-              class="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight"
+              class="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight opacity-0 animate-fade-in-down"
             >
               VainahPay
             </h1>
 
-            <p class="text-lg text-slate-600 leading-relaxed">
+            <p
+              class="text-lg text-slate-600 leading-relaxed opacity-0 animate-fade-in-down-delay-1"
+            >
               Vainah Pay - универсальная электронная платежная система,
               предоставляющая потребителям возможность моментальной электронной
               оплаты товаров, услуг и осуществления денежных переводов. Через
@@ -36,12 +39,14 @@ import {
             </p>
           </div>
 
-          <!-- Management -->
-          <div class="flex justify-center">
+          <!-- Правая колонка с карточкой президента -->
+          <div
+            class="flex justify-center opacity-0 animate-slide-in-from-right"
+          >
             <div
               class="max-w-sm p-6 border border-primary-200 rounded-xl text-center shadow-lg bg-primary-100"
             >
-              <div class="w-80 h-80 rounded-full mb-4 overflow-hidden ">
+              <div class="w-80 h-80 rounded-full mb-4 overflow-hidden">
                 <img
                   src="assets/img/SolsaevAS.png"
                   alt="solsaev"

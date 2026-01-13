@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +10,12 @@ import { Component } from '@angular/core';
       id="list"
       class="pt-32 pb-20 px-6 bg-gradient-to-br from-slate-100 via-white to-primary-200"
     >
-      <div class="max-w-7xl mx-auto">
+      <div class="services-list-section max-w-7xl mx-auto">
         <!-- Header -->
-        <div class="text-center mb-16">
+        <div
+          class="text-center mb-16 opacity-0 transition-all duration-1000"
+          [class.animate-fade-in]="isServicesVisible"
+        >
           <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             Список сервисов
           </h2>
@@ -22,7 +25,9 @@ import { Component } from '@angular/core';
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Сотовая связь -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition opacity-0"
+            [class.animate-fade-scale]="isServicesVisible"
+            style="animation-delay: 100ms"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Сотовая связь
@@ -37,7 +42,9 @@ import { Component } from '@angular/core';
 
           <!-- Интернет и IP телефония -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition opacity-0"
+            [class.animate-fade-scale]="isServicesVisible"
+            style="animation-delay: 200ms"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Интернет и IP телефония
@@ -51,7 +58,9 @@ import { Component } from '@angular/core';
 
           <!-- Коммунальные платежи -->
           <div
-            class="p-6 border  bg-white border-slate-200 rounded-2xl transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition opacity-0"
+            [class.animate-fade-scale]="isServicesVisible"
+            style="animation-delay: 300ms"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Коммунальные платежи
@@ -64,7 +73,9 @@ import { Component } from '@angular/core';
 
           <!-- Домашняя связь -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition opacity-0"
+            [class.animate-fade-scale]="isServicesVisible"
+            style="animation-delay: 400ms"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Домашняя связь
@@ -77,7 +88,9 @@ import { Component } from '@angular/core';
 
           <!-- Коммерческое телевидение -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition opacity-0"
+            [class.animate-fade-scale]="isServicesVisible"
+            style="animation-delay: 500ms"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Коммерческое телевидение
@@ -92,7 +105,9 @@ import { Component } from '@angular/core';
 
           <!-- ГИБДД и госпошлины -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition opacity-0"
+            [class.animate-fade-scale]="isServicesVisible"
+            style="animation-delay: 600ms"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               ГИБДД и госпошлины
@@ -106,7 +121,9 @@ import { Component } from '@angular/core';
 
           <!-- Кредиты -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition opacity-0"
+            [class.animate-fade-scale]="isServicesVisible"
+            style="animation-delay: 700ms"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Кредиты и пополнение
@@ -121,7 +138,9 @@ import { Component } from '@angular/core';
 
           <!-- Прочие -->
           <div
-            class="p-6 border bg-white border-slate-200 rounded-2xl transition"
+            class="p-6 border bg-white border-slate-200 rounded-2xl transition opacity-0"
+            [class.animate-fade-scale]="isServicesVisible"
+            style="animation-delay: 800ms"
           >
             <h3 class="text-xl font-semibold text-slate-900 mb-4">
               Прочие услуги
@@ -842,4 +861,35 @@ import { Component } from '@angular/core';
   `,
   styles: [],
 })
-export class Attendanceomponent {}
+export class AttendanceСomponent implements OnInit, OnDestroy, AfterViewInit {
+  isServicesVisible = false;
+  private servicesObserver?: IntersectionObserver;
+
+  ngOnInit() {
+    this.servicesObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.isServicesVisible = true;
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+  }
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      const section = document.querySelector('.services-list-section');
+      if (section && this.servicesObserver) {
+        this.servicesObserver.observe(section);
+      }
+    }, 100);
+  }
+
+  ngOnDestroy() {
+    if (this.servicesObserver) {
+      this.servicesObserver.disconnect();
+    }
+  }
+}
