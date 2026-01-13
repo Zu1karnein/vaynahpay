@@ -326,7 +326,6 @@ export class AboutComponent implements OnInit, OnDestroy {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             this.isVisible = true;
-            console.log('Секция статистики видна!'); // Для отладки
           }
         });
       },
@@ -340,9 +339,6 @@ export class AboutComponent implements OnInit, OnDestroy {
       const section = document.querySelector('.stats-section');
       if (section && this.observer) {
         this.observer.observe(section);
-        console.log('Наблюдатель за .stats-section запущен'); // Для отладки
-      } else {
-        console.error('Секция .stats-section не найдена'); // Для отладки
       }
     }, 100);
   }
