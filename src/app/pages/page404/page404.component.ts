@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <section
-      class="flex flex-col items-center justify-center h-screen bg-white text-slate-900 px-6"
+      class="flex flex-col items-center justify-center h-screen bg-white text-slate-900 px-6 opacity-0 animate-fade-in-down"
     >
       <h1 class="text-6xl font-bold mb-4">404</h1>
       <h2 class="text-3xl mb-6">Такой страницы нет :(</h2>
