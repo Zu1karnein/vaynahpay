@@ -39,6 +39,10 @@ import { ModalService } from '../../services/modal.service';
             О Компании <span class="nav-underline"></span>
           </a>
 
+          <a routerLink="/news" routerLinkActive="active-link" class="nav-link">
+            Новости <span class="nav-underline"></span>
+          </a>
+
           <a
             routerLink="/contacts"
             routerLinkActive="active-link"
