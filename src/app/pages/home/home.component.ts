@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -42,10 +42,10 @@ import { CommonModule } from '@angular/common';
             <div class="relative w-80 h-80">
               <!-- Gradient background shapes -->
               <div
-                class="absolute inset-0 bg-gradient-to-br from-primary-200 to-primary-100 rounded-3xl transform rotate-12"
+                class="absolute inset-0 bg-gradient-to-br from-primary-200 to-primary-100 rounded-3xl transform rotate-12 opacity-0 animate-slide-in-rotate"
               ></div>
               <div
-                class="absolute inset-0 bg-white rounded-2xl shadow-2xl flex items-center justify-center"
+                class="absolute inset-0 bg-white rounded-2xl shadow-2xl flex items-center justify-center opacity-0 animate-slide-in-card"
               >
                 <div class="text-center">
                   <div
@@ -65,8 +65,12 @@ import { CommonModule } from '@angular/common';
 
     <!-- Why VaynahPay Section -->
     <section class="py-20 px-6">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center mb-16">
+      <div class="why-choose-section max-w-7xl mx-auto">
+        <!-- Header -->
+        <div
+          class="text-center mb-16 opacity-0 transition-all duration-1000"
+          [class.animate-fade-in-down]="isWhyChooseVisible"
+        >
           <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             Почему выбирают VainahPay?
           </h2>
@@ -84,7 +88,9 @@ import { CommonModule } from '@angular/common';
             type="button"
             [routerLink]="['/services']"
             fragment="provider"
-            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all "
+            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all opacity-0"
+            [class.animate-slide-up]="isWhyChooseVisible"
+            style="animation-delay: 300ms"
           >
             <div
               class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors"
@@ -145,7 +151,9 @@ import { CommonModule } from '@angular/common';
             type="button"
             [routerLink]="['/services']"
             fragment="agent"
-            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white"
+            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white opacity-0"
+            [class.animate-slide-up]="isWhyChooseVisible"
+            style="animation-delay: 500ms"
           >
             <div
               class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors"
@@ -177,7 +185,9 @@ import { CommonModule } from '@angular/common';
             type="button"
             [routerLink]="['/services']"
             fragment="list"
-            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white"
+            class="group p-8 rounded-xl border border-slate-200 hover:border-primary-300 hover:shadow-lg transition-all bg-white opacity-0"
+            [class.animate-slide-up]="isWhyChooseVisible"
+            style="animation-delay: 700ms"
           >
             <div
               class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-200 transition-colors"
@@ -236,7 +246,38 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit, OnDestroy, AfterViewInit {
+  isWhyChooseVisible = false;
+  private whyChooseObserver?: IntersectionObserver;
+
+  ngOnInit() {
+    this.whyChooseObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.isWhyChooseVisible = true;
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+  }
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      const section = document.querySelector('.why-choose-section');
+      if (section && this.whyChooseObserver) {
+        this.whyChooseObserver.observe(section);
+      }
+    }, 100);
+  }
+
+  ngOnDestroy() {
+    if (this.whyChooseObserver) {
+      this.whyChooseObserver.disconnect();
+    }
+  }
+
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
