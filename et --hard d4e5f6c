@@ -1,0 +1,33 @@
+[33ma6623f6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m del video on home
+[33m0bd933a[m added template of news
+[33m973889d[m change about text
+[33m8fa60cd[m added animation on error page
+[33m14fc4b2[m added the news pahe on header
+[33m1c58ed7[m fixed scrolling top
+[33me6c1662[m animated some sections
+[33mfbb080d[m added animation for why us section on home page
+[33m2c26fce[m del code for debug
+[33mc3db0c5[m fixed stat animation on about page
+[33mece7133[m deleted shadow backlighthing on some cards
+[33m04a55f4[m fiexed style from reauisites section
+[33m86d27ce[m added link for users card on home page
+[33m1f06d73[m full h on hero sections
+[33mf1690db[m fiexed management card on about page
+[33mb95e599[m fixed  width header
+[33m10600d3[m deleted parthers part
+[33m3209f14[m added navigation for mobile users
+[33m8959b16[m added new nav link on header
+[33m8e85e53[m added last section on services page
+[33m5a9af7a[m added docs on services page
+[33mb15668a[m fixed links on home
+[33m18f03ab[m fixed some pugs
+[33med217ea[m fixed the button of header
+[33m1797638[m fixed docs on services page
+[33m49a50f0[m added services page whith information
+[33mc09c441[m added contacts page, and map on this page
+[33m7b93b3d[m add services and contacts pages
+[33m400c765[m partners
+[33mebfe45e[m fix rediscts for netlify
+[33m657109e[m added 404 page
+[33m237fe39[m a little chenges
+[33m3939ae6[m Initial commit

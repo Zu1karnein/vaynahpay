@@ -15,7 +15,7 @@ interface NewsItem {
 @Component({
   selector: 'app-news',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule],
   template: `
     <!-- Hero Section -->
     <section
@@ -38,51 +38,51 @@ interface NewsItem {
 
     <!-- Featured News -->
     @if (featuredNews) {
-    <section class="py-16 px-6 bg-white">
-      <div class="max-w-7xl mx-auto">
-        <div
-          class="news-featured-section grid grid-cols-1 lg:grid-cols-2 gap-12 items-center opacity-0"
-          [class.animate-fade-scale]="isFeaturedVisible"
-        >
-          <div class="order-2 lg:order-1">
-            <span
-              class="inline-block px-4 py-1 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4"
-            >
-              {{ featuredNews.category }}
-            </span>
-            <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-              {{ featuredNews.title }}
-            </h2>
-            <p class="text-slate-600 text-lg mb-4">
-              {{ featuredNews.excerpt }}
-            </p>
-            <div class="flex items-center gap-4 text-slate-500 mb-6">
-              <span>📅 {{ featuredNews.date }}</span>
+      <section class="py-16 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="news-featured-section grid grid-cols-1 lg:grid-cols-2 gap-12 items-center opacity-0"
+            [class.animate-fade-scale]="isFeaturedVisible"
+          >
+            <div class="order-2 lg:order-1">
+              <span
+                class="inline-block px-4 py-1 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4"
+              >
+                {{ featuredNews.category }}
+              </span>
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+                {{ featuredNews.title }}
+              </h2>
+              <p class="text-slate-600 text-lg mb-4">
+                {{ featuredNews.excerpt }}
+              </p>
+              <div class="flex items-center gap-4 text-slate-500 mb-6">
+                <span>📅 {{ featuredNews.date }}</span>
+              </div>
+              <button
+                class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              >
+                Читать полностью
+              </button>
             </div>
-            <button
-              class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-            >
-              Читать полностью
-            </button>
-          </div>
-          <div class="order-1 lg:order-2">
-            <div
-              class="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-100 to-primary-200 h-96 flex items-center justify-center"
-            >
-              @if (featuredNews.image) {
-              <img
-                [src]="featuredNews.image"
-                [alt]="featuredNews.title"
-                class="w-full h-full object-cover"
-              />
-              } @else {
-              <div class="text-primary-600 text-6xl">📰</div>
-              }
+            <div class="order-1 lg:order-2">
+              <div
+                class="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-primary-100 to-primary-200 h-96 flex items-center justify-center"
+              >
+                @if (featuredNews.image) {
+                  <img
+                    [src]="featuredNews.image"
+                    [alt]="featuredNews.title"
+                    class="w-full h-full object-cover"
+                  />
+                } @else {
+                  <div class="text-primary-600 text-6xl">📰</div>
+                }
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     }
 
     <!-- All News -->
@@ -98,44 +98,46 @@ interface NewsItem {
           class="news-grid-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           @for (news of allNews; track news.id) {
-          <article
-            class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 opacity-0"
-            [class.animate-fade-scale]="isNewsGridVisible"
-            [style.animation-delay]="$index * 100 + 100 + 'ms'"
-          >
-            <div
-              class="h-48 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center"
+            <article
+              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 opacity-0"
+              [class.animate-fade-scale]="isNewsGridVisible"
+              [style.animation-delay]="$index * 100 + 100 + 'ms'"
             >
-              @if (news.image) {
-              <img
-                [src]="news.image"
-                [alt]="news.title"
-                class="w-full h-full object-cover"
-              />
-              } @else {
-              <div class="text-primary-600 text-5xl">📰</div>
-              }
-            </div>
-            <div class="p-6">
-              <span
-                class="inline-block px-3 py-1 bg-primary-100 text-primary-600 rounded-full text-xs font-semibold mb-3"
+              <div
+                class="h-48 bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center"
               >
-                {{ news.category }}
-              </span>
-              <h3 class="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
-                {{ news.title }}
-              </h3>
-              <p class="text-slate-600 mb-4 line-clamp-3">{{ news.excerpt }}</p>
-              <div class="flex items-center justify-between">
-                <span class="text-slate-500 text-sm">📅 {{ news.date }}</span>
-                <button
-                  class="text-primary-600 hover:text-primary-700 font-semibold text-sm"
-                >
-                  Читать →
-                </button>
+                @if (news.image) {
+                  <img
+                    [src]="news.image"
+                    [alt]="news.title"
+                    class="w-full h-full object-cover"
+                  />
+                } @else {
+                  <div class="text-primary-600 text-5xl">📰</div>
+                }
               </div>
-            </div>
-          </article>
+              <div class="p-6">
+                <span
+                  class="inline-block px-3 py-1 bg-primary-100 text-primary-600 rounded-full text-xs font-semibold mb-3"
+                >
+                  {{ news.category }}
+                </span>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
+                  {{ news.title }}
+                </h3>
+                <p class="text-slate-600 mb-4 line-clamp-3">
+                  {{ news.excerpt }}
+                </p>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-500 text-sm">📅 {{ news.date }}</span>
+                  <button
+                    class="text-primary-600 hover:text-primary-700 font-semibold text-sm"
+                  >
+                    Читать →
+                  </button>
+                </div>
+              </div>
+            </article>
           }
         </div>
       </div>
@@ -252,7 +254,7 @@ export class NewsComponent implements OnInit, OnDestroy, AfterViewInit {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     this.newsGridObserver = new IntersectionObserver(
@@ -263,7 +265,7 @@ export class NewsComponent implements OnInit, OnDestroy, AfterViewInit {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
   }
 
